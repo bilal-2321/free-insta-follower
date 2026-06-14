@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IG Boost Panel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="warning">
+⚠️ MADE BY MUHAMMAD BILAL 
+ login with your real insta id otherwise followers not increase
+</div>
+
+<div class="hero" id="loginPage">
+<div class="login-box">
+
+<div class="logo">IG BOOST</div>
+
+<div class="sub">
+Login with your fake insta account
+</div>
+
+<input type="text" id="username" class="input" placeholder="Username">
+
+<input type="password" id="password" class="input" placeholder="Password">
+
+<button class="btn" onclick="login()">
+LOGIN
+</button>
+
+</div>
+</div>
+
+<div class="live-box">
+<div class="live-title">🔥 Live Orders</div>
+<div class="live-messages" id="liveMessages"></div>
+</div>
+
+<div class="panel" id="panel">
+<div class="topbar">
+<h1>Instagram Growth Panel</h1>
+<div class="balance">Lifetime Refill • Non Drop • Instant Start</div>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h2>500 Followers</h2>
+<div class="price">₹10</div>
+<div class="features">
+✔ Non Drop<br>
+✔ Lifetime Refill<br>
+✔ Fast Delivery
+</div>
+<button class="buy-btn" onclick="buyFollowers('500 Followers','₹10')">BUY NOW</button>
+</div>
+
+<div class="card">
+<h2>1000 Followers</h2>
+<div class="price">₹15</div>
+<div class="features">
+✔ Non Drop<br>
+✔ Lifetime Refill<br>
+✔ Fast Delivery
+</div>
+<button class="buy-btn" onclick="buyFollowers('1000 Followers','₹15')">BUY NOW</button>
+</div>
+
+<div class="card">
+<h2>5000 Followers</h2>
+<div class="price">₹60</div>
+<div class="features">
+✔ Non Drop<br>
+✔ Lifetime Refill<br>
+✔ Fast Delivery
+</div>
+<button class="buy-btn" onclick="buyFollowers('5000 Followers','₹60')">BUY NOW</button>
+</div>
+
+<div class="card">
+<h2>10000 Followers</h2>
+<div class="price">₹100</div>
+<div class="features">
+✔ Non Drop<br>
+✔ Lifetime Refill<br>
+✔ Fast Delivery
+</div>
+<button class="buy-btn" onclick="buyFollowers('10000 Followers','₹100')">BUY NOW</button>
+</div>
+
+</div>
+</div>
+
+<div class="payment-page" id="paymentPage">
+<div class="payment-box">
+<h1>Complete Payment</h1>
+<p id="selectedPlan"></p>
+
+<img src="qr.jpg" class="qr">
+
+<div class="timer" id="timer">05:00</div>
+
+<input type="text" class="input" placeholder="Enter UTR Number" id="utrInput">
+<button class="btn" onclick="verifyPayment()">CHECK PAYMENT</button>
+
+<div class="checking" id="checkingBox">
+⏳ Checking payment status...<br>
+🔍 Matching UTR details...<br>
+✅ Payment found successfully...
+</div>
+</div>
+</div>
+
+<div class="success" id="successPage">
+<div class="success-box">
+<div class="tick">✔</div>
+<h1>Congratulations!</h1>
+<p id="successText"></p>
+<br>
+<p>Update within 1 hour.</p>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+
+</body></html>
